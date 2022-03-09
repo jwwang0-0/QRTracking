@@ -1,25 +1,42 @@
 {
   "dependencies": {
     "com.microsoft.mixedreality.openxr": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.openxr-1.0.0.tgz",
+      "version": "file:MixedReality/com.microsoft.mixedreality.openxr-1.3.1.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.unity.xr.openxr": "1.2.2",
-        "com.unity.xr.arsubsystems": "4.1.7",
-        "com.unity.xr.arfoundation": "4.1.7"
+        "com.unity.xr.arfoundation": "4.1.7",
+        "com.unity.xr.management": "4.2.0",
+        "com.unity.xr.openxr": "1.3.1"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.examples": {
+      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.examples-2.7.3.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.foundation": "2.7.3",
+        "com.microsoft.mixedreality.toolkit.extensions": "2.7.3"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.extensions": {
+      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.extensions-2.7.3.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.microsoft.mixedreality.toolkit.foundation": "2.7.3"
       }
     },
     "com.microsoft.mixedreality.toolkit.foundation": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.foundation-2.7.0.tgz",
+      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.foundation-2.7.3.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
-        "com.microsoft.mixedreality.toolkit.standardassets": "2.7.0"
+        "com.microsoft.mixedreality.toolkit.standardassets": "2.7.3"
       }
     },
     "com.microsoft.mixedreality.toolkit.standardassets": {
-      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.7.0.tgz",
+      "version": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.7.3.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -35,11 +52,12 @@
       }
     },
     "com.unity.collab-proxy": {
-      "version": "1.5.7",
+      "version": "1.15.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0"
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.services.core": "1.0.1"
       },
       "url": "https://packages.unity.com"
     },
@@ -51,16 +69,16 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "2.0.7",
+      "version": "3.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.1"
+        "com.unity.ext.nunit": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.8",
+      "version": "2.0.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -69,7 +87,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.3",
+      "version": "1.2.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -89,6 +107,15 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.services.core": {
+      "version": "1.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.subsystemregistration": {
       "version": "1.1.0",
       "depth": 2,
@@ -99,7 +126,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.29",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -119,7 +146,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.4.8",
+      "version": "1.6.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -163,12 +190,12 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.subsystemregistration": "1.0.5"
+        "com.unity.subsystemregistration": "1.0.6"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.7",
+      "version": "2.1.8",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -178,7 +205,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "4.0.1",
+      "version": "4.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -191,8 +218,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.openxr": {
-      "version": "1.2.2",
-      "depth": 1,
+      "version": "1.3.1",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.management": "4.0.1",
@@ -202,7 +229,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.windowsmr": {
-      "version": "4.5.0",
+      "version": "4.6.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
