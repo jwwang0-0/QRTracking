@@ -29,6 +29,7 @@ namespace QRTracking.WindowsMR
         public bool TryLocate(FrameTime frameTime, out Pose pose)
         {
             pose = Pose.identity;
+            //System.IntPtr rootCoordnateSystemPtr = UnityEngine.XR.WindowsMR.WindowsMREnvironment.OriginSpatialCoordinateSystem;
 
 #if WINDOWS_UWP
                 Quaternion rotation = Quaternion.identity;
